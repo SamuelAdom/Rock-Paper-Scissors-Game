@@ -1,0 +1,106 @@
+
+
+body {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    font-family: cursive;
+    background-color: powderblue;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+}
+
+#choices {
+    text-align: center;
+}
+
+#choices h1 {
+    font-size: 3rem;
+}
+
+  
+
+#choices button {
+    font-size: 6rem;
+    margin: 0 10px;
+    max-width: 150px;
+    cursor: pointer;
+    background-color: crimson;
+    border-radius: 5px;
+
+
+}
+
+#resetBtn {
+    margin-top: 10px;
+    border: none;
+    padding: 10px 15px;
+    font-family: cursive;
+    width: 10%;
+    border-radius: 10px;
+    font-size: 18px;
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.4s ease;
+}
+
+#resetBtn:hover {
+    background-color: crimson;
+    color: white;
+}
+
+  
+  
+
+
+#resultDisplay {
+    font-size: 3rem;
+
+}
+
+#playerDisplay,
+#computerDisplay {
+    text-align: center;
+    font-size: 1rem;
+}
+
+.greentext,
+#playerscoreDisplay {
+    color: green;
+}
+
+.redtext,
+#computerscoreDisplay {
+    color: red;
+}
+
+/*media query*/
+@media(max-width:480px) {
+    #choices h1 {
+        font-size: 2rem;
+    }
+
+    #resetBtn {
+        padding: 10px 40px;
+        text-align: center;
+        width: 40%;
+        border-radius: 10px;
+        background: crimson;
+        color: white;
+        font-size: 20px;
+    }
+
+    #choices button {
+        margin: 20px;
+
+    }
+
+    #playerDisplay,
+    #computerDisplay {
+        font-size: 20px;
+    }
+
+}
