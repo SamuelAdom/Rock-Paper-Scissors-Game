@@ -30,23 +30,91 @@ body {
     cursor: pointer;
     background-color: crimson;
     border-radius: 5px;
+  
 
 
 }
 
+
+.vibrate-2 {
+	animation: vibrate-2 0.3s linear infinite both;
+}
+
+
+ @keyframes vibrate-2 {
+    0% {
+      transform: translate(0);
+    }
+    20% {
+      transform: translate(2px, -2px);
+    }
+    40% {
+      transform: translate(2px, 2px);
+    }
+    60% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(-2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+
 #resetBtn {
     margin-top: 10px;
     border: none;
-    padding: 10px 15px;
+    padding: 10px 50px;
     font-family: cursive;
-    width: 10%;
     border-radius: 10px;
     font-size: 18px;
     text-align: center;
     cursor: pointer;
     transition: background-color 0.4s ease;
 }
+.vibrate-3 {
+	animation: vibrate-3 0.9s infinite ;
+}
 
+ @keyframes vibrate-3 {
+    0% {
+      transform: translate(0);
+    }
+    10% {
+      transform: translate(-2px, -2px);
+    }
+    20% {
+      transform: translate(2px, -2px);
+    }
+    30% {
+      transform: translate(-2px, 2px);
+    }
+    40% {
+      transform: translate(2px, 2px);
+    }
+    50% {
+      transform: translate(-2px, -2px);
+    }
+    60% {
+      transform: translate(2px, -2px);
+    }
+    70% {
+      transform: translate(-2px, 2px);
+    }
+    80% {
+      transform: translate(-2px, -2px);
+    }
+    90% {
+      transform: translate(2px, -2px);
+    }
+    100% {
+      transform: translate(0);
+    }
+  }
+  
+  
 #resetBtn:hover {
     background-color: crimson;
     color: white;
@@ -86,7 +154,6 @@ body {
     #resetBtn {
         padding: 10px 40px;
         text-align: center;
-        width: 40%;
         border-radius: 10px;
         background: crimson;
         color: white;
@@ -101,6 +168,9 @@ body {
     #playerDisplay,
     #computerDisplay {
         font-size: 20px;
+    }
+    .scores{
+        margin: 10px;
     }
 
 }
